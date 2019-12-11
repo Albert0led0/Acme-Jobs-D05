@@ -647,7 +647,7 @@
 		<property name="title" value="Título01" />
 		<property name="description" value="Descripción01" />
 		<property name="timePercentage" value="0.1" />
-		<property name="job" ref="Job01"/>
+		<property name="job" ref="Job06"/>
 	</bean>
 
 	<bean id="Duty02" class="acme.entities.duties.Duty">
