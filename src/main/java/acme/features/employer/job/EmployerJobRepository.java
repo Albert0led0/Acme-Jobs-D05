@@ -18,4 +18,7 @@ public interface EmployerJobRepository extends AbstractRepository {
 	@Query("select j from Job j where j.employer.id = ?1")
 	Collection<Job> findManyByEmployerId(int employerId);
 
+	@Query("select count(a)>0 from Application a where a.job.id= ?1")
+	Boolean jobHasApplications(int jobId);
+
 }
