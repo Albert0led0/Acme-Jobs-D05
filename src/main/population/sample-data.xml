@@ -628,13 +628,26 @@
 		<property name="description" value="Esto es la descripción del trabajo 05" />
 	</bean>
 	
+	<bean id="Job06" class="acme.entities.jobs.Job">
+		<property name="referenceNumber" value="ref-job06" />
+		<property name="title" value="Job06" />
+		<property name="deadline" value="2022/02/01 15:00"/>
+		<property name="salary">
+			<ref bean="MoneySalary05" />
+		</property>
+		<property name="link" value="http://www.example.org"/>
+		<property name="draft" value="true" />
+		<property name="employer" ref="employerEmployer1" />		
+		<property name="description" value="Esto es la descripción del trabajo 06" />
+	</bean>
+	
 	<!-- Duties -->
 	
 	<bean id="Duty01" class="acme.entities.duties.Duty">
 		<property name="title" value="Título01" />
 		<property name="description" value="Descripción01" />
 		<property name="timePercentage" value="0.1" />
-		<property name="job" ref="Job01"/>
+		<property name="job" ref="Job06"/>
 	</bean>
 
 	<bean id="Duty02" class="acme.entities.duties.Duty">
