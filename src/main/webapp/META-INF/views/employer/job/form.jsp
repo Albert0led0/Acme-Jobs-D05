@@ -14,24 +14,29 @@
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+<spring:message var="reference" code="employer.job.form.ref-placeholder"/>
 <acme:form>
-	<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber"/>
+	<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
 	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
 	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
 	<acme:form-textbox code="employer.job.form.label.link" path="link"/> 
-	<acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status" />
+	<jstl:if test="${command != 'create'}">
+		<acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status" />
+	</jstl:if>
 	<jstl:if test="${draft == true && command != 'create'}">
 		<acme:form-checkbox code="employer.job.form.label.draft" path="draft"/>
 	</jstl:if>
 	<acme:form-textbox code="employer.job.form.label.description" path="description"/>
 
-	
 	<acme:form-submit test="${command == 'show'}"
 		code="employer.job.form.button.update" action="update"/>
 	<acme:form-submit test="${command == 'show'}"
 		code="employer.job.form.button.delete" action="delete"/>
+	<acme:form-submit test="${command == 'create'}"
+		code="employer.job.form.button.create" action="create"/>
 	<acme:form-submit test="${command == 'update'}"
 		code="employer.job.form.button.update" action="update"/>
 	<acme:form-submit test="${command == 'delete'}"
