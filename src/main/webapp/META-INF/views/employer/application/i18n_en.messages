@@ -12,6 +12,6 @@ employer.application.form.label.reference = Reference
 employer.application.form.label.moment = Moment
 employer.application.form.label.status = Status
 employer.application.form.label.skills= Skills
-employer.application.form.label.statements = Statements
+employer.application.form.label.statement = Statements
 employer.application.form.label.qualifications = Qualifications
 employer.application.form.button.return = Return
