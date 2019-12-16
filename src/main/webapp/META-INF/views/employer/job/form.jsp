@@ -18,15 +18,18 @@
 
 <spring:message var="reference" code="employer.job.form.ref-placeholder"/>
 <acme:form>
-	<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
+	<jstl:if test="${command != 'create'}">
+		<acme:form-textbox readonly="true" code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
+	</jstl:if>
+	<jstl:if test="${command == 'create'}">
+		<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
+	</jstl:if>
 	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
 	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
 	<acme:form-textbox code="employer.job.form.label.link" path="link"/> 
 	<jstl:if test="${command != 'create'}">
 		<acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status" />
-	</jstl:if>
-	<jstl:if test="${draft == true && command != 'create'}">
 		<acme:form-checkbox code="employer.job.form.label.draft" path="draft"/>
 	</jstl:if>
 	<acme:form-textbox code="employer.job.form.label.description" path="description"/>
