@@ -51,7 +51,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "referenceNumber");
+		request.bind(entity, errors);
 
 	}
 
@@ -61,7 +61,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "salary", "link", "description", "status", "draft");
+		request.unbind(entity, model, "referenceNumber", "title", "deadline", "salary", "link", "description", "status", "draft");
 
 	}
 
@@ -83,6 +83,11 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		Job pastEntity = this.repository.findOneJobById(entity.getId());
+		if (!pastEntity.getReferenceNumber().equals(entity.getReferenceNumber())) {
+			errors.state(request, !this.repository.checkUniqueReference(entity.getReferenceNumber()), "referenceNumber", "employer.job.error.unique-reference");
+		}
 
 		Date now;
 		now = new Date(System.currentTimeMillis());
