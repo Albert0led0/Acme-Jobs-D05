@@ -26,3 +26,6 @@ employer.job.form.button.return = Return
 employer.job.error.no-apps = Cannot be deleted, job has applications
 employer.job.error.past-deadline = Deadline must be future
 employer.job.error.unique-reference = This reference already exists
+employer.job.error.draft = A published job cannot be modified
+employer.job.error.percentage = The duties cannot sum up to over 100% of the weekly workload
+employer.job.error.spam = This job is considered spam, therefore it cannot be published

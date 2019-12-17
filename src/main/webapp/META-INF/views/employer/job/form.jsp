@@ -18,12 +18,7 @@
 
 <spring:message var="reference" code="employer.job.form.ref-placeholder"/>
 <acme:form>
-	<jstl:if test="${command != 'create'}">
-		<acme:form-textbox readonly="true" code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
-	</jstl:if>
-	<jstl:if test="${command == 'create'}">
-		<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
-	</jstl:if>
+	<acme:form-textbox code="employer.job.form.label.reference" path="referenceNumber" placeholder="${reference}"/>
 	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
 	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
