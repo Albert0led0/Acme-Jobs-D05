@@ -12,5 +12,10 @@
 	<acme:form-textbox code="authenticated.job.form.label.link" path="link"/>
 	<acme:form-textarea code="authenticated.job.form.label.description" path="description"/>
 	
+	<acme:menu-suboption 
+		code="authenticated.job.form.button.application.create"
+		action="/worker/application/create?jobId=${id}"
+		access="hasRole('Worker')"/>
+	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 </acme:form>

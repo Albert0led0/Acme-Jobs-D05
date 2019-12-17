@@ -7,6 +7,7 @@ authenticated.job.form.label.salary = Salario:
 authenticated.job.form.label.link = Enlace:
 authenticated.job.form.label.description = Descripción:
 
+authenticated.job.form.button.application.create = Crear petición
 authenticated.job.form.button.return = Volver
 
 authenticated.job.list.referenceNumber = Número de referencia
