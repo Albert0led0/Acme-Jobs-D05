@@ -13,3 +13,7 @@ worker.application.form.button.return = Return
 worker.application.list.referenceNumber = Reference Number
 worker.application.list.moment = Creation moment
 worker.application.list.status = Status
+
+worker.application.form.label.pending = Pending
+worker.application.form.label.accepted = Accepted
+worker.application.form.label.rejected = Rejected

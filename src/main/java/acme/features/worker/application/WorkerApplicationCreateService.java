@@ -43,9 +43,8 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("jobs", this.repository.findAllJobs());
 		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications");
-		model.setAttribute("id", entity.getJob().getId());
+		model.setAttribute("id", request.getModel().getInteger("jobId"));
 	}
 
 	@Override
@@ -53,13 +52,18 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		Application result;
 		Worker worker;
 		Principal principal;
+
 		Job job = this.repository.findOneJobById(request.getModel().getInteger("jobId"));
 		principal = request.getPrincipal();
 		int principalAccId = principal.getAccountId();
 
 		worker = this.repository.findOneWorkerByUserAccountId(principalAccId);
 
+		Date moment;
+		moment = new Date(System.currentTimeMillis() - 1);
+
 		result = new Application();
+		result.setMoment(moment);
 		result.setWorker(worker);
 		result.setJob(job);
 
@@ -80,6 +84,10 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 		moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
+
+		Job job = this.repository.findOneJobById(request.getModel().getInteger("jobId"));
+		entity.setJob(job);
+
 		this.repository.save(entity);
 	}
 

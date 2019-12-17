@@ -9,12 +9,11 @@
 	<jstl:if test="${command != 'create'}">
 		<acme:form-moment code="worker.application.form.label.moment" path="moment" readonly="true"/>
 	</jstl:if>
-<%-- 	<acme:form-select code="worker.application.form.label.status" path="status"> --%>
-<!-- 		<option value="pending" selected>pending</option>  -->
-<!-- 		<option value="accepted">accepted</option> -->
-<!-- 		<option value="rejected">rejected</option> -->
-<%-- 	</acme:form-select> --%>
-	<acme:form-textbox code="worker.application.form.label.status" path="status"/>
+ 	<acme:form-select code="worker.application.form.label.status" path="status">
+ 		<acme:form-option code="worker.application.form.label.pending" value="pending"/>
+ 		<acme:form-option code="worker.application.form.label.accepted" value="accepted"/>
+ 		<acme:form-option code="worker.application.form.label.rejected" value="rejected"/>
+ 	</acme:form-select>
 	<acme:form-textbox code="worker.application.form.label.statement" path="statement"/>
 	<acme:form-textbox code="worker.application.form.label.skills" path="skills"/>
 	<acme:form-textbox code="worker.application.form.label.qualifications" path="qualifications"/>

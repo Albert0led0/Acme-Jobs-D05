@@ -13,3 +13,7 @@ worker.application.form.button.return = Volver
 worker.application.list.referenceNumber = Número de referencia
 worker.application.list.moment = Momento de creación
 worker.application.list.status = Estado
+
+worker.application.form.label.pending = Pendiente
+worker.application.form.label.accepted = Aceptado
+worker.application.form.label.rejected = Rechazado
