@@ -96,6 +96,9 @@
 		
 		<acme:menu-option code="master.menu.application" access="hasRole('Employer')">
 			<acme:menu-suboption code="master.menu.application.list-mine" action="/employer/application/list-mine"/>
+			<acme:menu-suboption code="master.menu.application.list-by-reference" action="/employer/application/list-by-reference"/>
+			<acme:menu-suboption code="master.menu.application.list-by-moment" action="/employer/application/list-by-moment"/>
+			<acme:menu-suboption code="master.menu.application.list-by-status" action="/employer/application/list-by-status"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.banner" access="hasRole('Administrator')">
