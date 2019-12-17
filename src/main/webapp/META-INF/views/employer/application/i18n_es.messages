@@ -21,3 +21,4 @@ employer.application.form.label.accepted = Aceptado
 employer.application.form.label.rejected = Rechazado
 employer.application.form.label.justification = Justificación
 employer.application.form.button.update = Actualizar
+employer.application.form.label.status.current = Estado actual

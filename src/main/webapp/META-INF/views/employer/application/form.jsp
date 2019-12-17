@@ -19,6 +19,8 @@
 	<acme:form-textbox code="employer.application.form.label.reference" path="referenceNumber" readonly="true"/>
 	<acme:form-moment code="employer.application.form.label.moment" path="moment" readonly="true"/>
 	
+	<acme:form-textbox code="employer.application.form.label.status.current" path="currentStatus" readonly="true"/>
+	
 	<acme:form-select code="employer.application.form.label.status" path="status">
 	<acme:form-option code="employer.application.form.label.pending" value="pending"/>
 	<acme:form-option code="employer.application.form.label.accepted" value="accepted"/>
