@@ -26,3 +26,6 @@ employer.job.form.button.return = Volver
 employer.job.error.no-apps = No se puede eliminar, el trabajo tiene solicitudes
 employer.job.error.past-deadline = La fecha límite debe ser futura
 employer.job.error.unique-reference = Esta referencia ya existe
+employer.job.error.draft = Un trabajo publicado no puede ser modificado
+employer.job.error.percentage = Las tareas no pueden sumar más del 100% de la carga de trabajo semanal
+employer.job.error.spam = Este trabajo se considera spam, por lo que no puede ser publicado

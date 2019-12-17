@@ -74,7 +74,9 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		Date now;
 
 		now = new Date(System.currentTimeMillis());
-		errors.state(request, entity.getDeadline().after(now), "deadline", "employer.job.error.past-deadline");
+		if (entity.getDeadline() != null) {
+			errors.state(request, entity.getDeadline().after(now), "deadline", "employer.job.error.past-deadline");
+		}
 		errors.state(request, !this.repository.checkUniqueReference(entity.getReferenceNumber()), "referenceNumber", "employer.job.error.unique-reference");
 
 	}

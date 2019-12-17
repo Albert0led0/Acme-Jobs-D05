@@ -25,8 +25,6 @@
 	<acme:form-textbox code="employer.job.form.label.link" path="link"/> 
 	<jstl:if test="${command != 'create'}">
 		<acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status" />
-	</jstl:if>
-	<jstl:if test="${draft == true && command != 'create'}">
 		<acme:form-checkbox code="employer.job.form.label.draft" path="draft"/>
 	</jstl:if>
 	<acme:form-textbox code="employer.job.form.label.description" path="description"/>

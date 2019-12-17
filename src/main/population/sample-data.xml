@@ -601,7 +601,7 @@
 		<property name="employer" ref="employerEmployer1" />
 		<property name="description" value="Esto es la descripción del trabajo 03" />
 	</bean>
-	<!-- active job -->
+	<!-- !active job -->
 	<bean id="Job04" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job04" />
 		<property name="title" value="Job04" />
@@ -610,7 +610,7 @@
 			<ref bean="MoneySalary04" />
 		</property>
 		<property name="link"><null/></property>
-		<property name="draft" value="false" />
+		<property name="draft" value="true" />
 		<property name="employer" ref="employerEmployer" />		
 		<property name="description" value="Esto es la descripción del trabajo 04" />
 	</bean>
@@ -660,7 +660,7 @@
 	<bean id="Duty03" class="acme.entities.duties.Duty">
 		<property name="title" value="Título03" />
 		<property name="description" value="Descripción03" />
-		<property name="timePercentage" value="0.3" />
+		<property name="timePercentage" value="0.6" />
 		<property name="job" ref="Job02"/>
 	</bean>
 	
