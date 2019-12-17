@@ -15,3 +15,10 @@ employer.application.form.label.skills= Skills
 employer.application.form.label.statement = Statements
 employer.application.form.label.qualifications = Qualifications
 employer.application.form.button.return = Return
+
+employer.application.form.label.pending = Pending
+employer.application.form.label.accepted = Accepted
+employer.application.form.label.rejected = Rejected
+employer.application.form.label.justification = Justification
+employer.application.form.button.update = Update
+employer.application.form.label.status.current = Current status
