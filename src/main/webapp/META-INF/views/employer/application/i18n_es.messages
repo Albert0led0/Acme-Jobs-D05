@@ -22,3 +22,6 @@ employer.application.form.label.rejected = Rechazado
 employer.application.form.label.justification = Justificación
 employer.application.form.button.update = Actualizar
 employer.application.form.label.status.current = Estado actual
+employer.application.form.label.job = Referencia del trabajo
+
+employer.application.error.justification = Es necesaria una justificación si la solicitud está rechazada 

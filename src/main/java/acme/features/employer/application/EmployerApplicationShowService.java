@@ -52,7 +52,7 @@ public class EmployerApplicationShowService implements AbstractShowService<Emplo
 
 		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications", "justification");
 
-		model.setAttribute("currentStatus", entity.getStatus());
+		model.setAttribute("jobRef", entity.getJob().getReferenceNumber());
 
 	}
 

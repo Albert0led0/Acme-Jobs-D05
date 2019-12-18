@@ -713,7 +713,9 @@
 	
 	
 	<!-- Jobs -->
-	<!-- !active job -->
+	
+	<!-- !active job-->
+	
 	<bean id="Job01" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job01" />
 		<property name="title" value="Job01" />
@@ -726,7 +728,8 @@
 		<property name="employer" ref="employerEmployer" />
 		<property name="description" value="Esto es la descripción del trabajo 01" />
 	</bean>
-	<!-- active job -->
+	
+	<!-- active -->
 	<bean id="Job02" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job02" />
 		<property name="title" value="Job02" />
@@ -739,7 +742,8 @@
 		<property name="employer" ref="employerEmployer" />
 		<property name="description" value="Esto es la descripción del trabajo 02" />
 	</bean>
-	<!-- !active job -->
+	
+	<!-- !active -->
 	<bean id="Job03" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job03" />
 		<property name="title" value="Job03" />
@@ -752,7 +756,8 @@
 		<property name="employer" ref="employerEmployer2" />
 		<property name="description" value="Esto es la descripción del trabajo 03" />
 	</bean>
-	<!-- !active job -->
+	
+	<!-- active -->
 	<bean id="Job04" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job04" />
 		<property name="title" value="Job04" />
@@ -761,11 +766,12 @@
 			<ref bean="MoneySalary04" />
 		</property>
 		<property name="link"><null/></property>
-		<property name="draft" value="true" />
+		<property name="draft" value="false" />
 		<property name="employer" ref="employerEmployer" />		
 		<property name="description" value="Esto es la descripción del trabajo 04" />
 	</bean>
 	
+	<!-- active -->
 	<bean id="Job05" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job05" />
 		<property name="title" value="Job05" />
@@ -779,6 +785,7 @@
 		<property name="description" value="Esto es la descripción del trabajo 05" />
 	</bean>
 	
+	<!-- !active -->
 	<bean id="Job06" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job06" />
 		<property name="title" value="Job06" />
@@ -792,7 +799,7 @@
 		<property name="description" value="Esto es la descripción del trabajo 06" />
 	</bean>
 	
-	<!-- Draft job -->
+	<!-- !active -->
 	<bean id="Job07" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job07" />
 		<property name="title" value="Job07" />
@@ -806,7 +813,7 @@
 		<property name="description" value="Busco convertir a alguien en mileurista." />
 	</bean>
 	
-	<!-- Draft job -->
+	<!-- !active -->
 	<bean id="Job08" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job08" />
 		<property name="title" value="Job08" />
@@ -820,7 +827,7 @@
 		<property name="description" value="Todavía por escribir" />
 	</bean>
 	
-	<!-- Draft job -->
+	<!-- !active -->
 	<bean id="Job09" class="acme.entities.jobs.Job">
 		<property name="referenceNumber" value="ref-job09" />
 		<property name="title" value="Recoger aceitunas" />
@@ -1035,6 +1042,7 @@
 		<property name="statement" value="Por favor, contratadme 03" />
 		<property name="skills" value="Skill01, Skill02, Skill03" />
 		<property name="qualifications" value="Qualification01, Qualification02, Qualification03" />
+		<property name="justification" value="Justification01" />
 		<property name="worker" ref="workerWorker" />
 		<property name="job" ref="Job04" />
 	</bean>
@@ -1101,6 +1109,7 @@
 		<property name="statement" value="Necesito el dinero" />
 		<property name="skills" value="Sé manejarme con mi espada de madera" />
 		<property name="qualifications" value="ESO" />
+		<property name="justification" value="Necesitamos alguien que sepa usar magia" />
 		<property name="worker" ref="workerWorker" />
 		<property name="job" ref="Job12" />
 	</bean>
@@ -1112,6 +1121,7 @@
 		<property name="statement" value="Creo que soy quien necesitáis" />
 		<property name="skills" value="Demasiadas como para listarlas" />
 		<property name="qualifications" value="Rank 1 en FFXIV" />
+		<property name="justification" value="Sólo queremos gente que juege al WOW" />
 		<property name="worker" ref="workerWorker2" />
 		<property name="job" ref="Job12" />
 	</bean>
