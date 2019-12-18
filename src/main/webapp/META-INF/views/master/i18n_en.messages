@@ -60,6 +60,10 @@ master.menu.provider.favourite-link 	= Favourite link
 master.menu.consumer 					= Consumer
 master.menu.consumer.favourite-link 	= Favourite link
 
+# master.menu.auditor ##########################################################
+
+master.menu.auditor 					= Auditor
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account 					= Account
@@ -68,10 +72,6 @@ master.menu.user-account.provider 			= Provider data
 master.menu.user-account.become-provider 	= Become a provider
 master.menu.user-account.consumer 			= Consumer data
 master.menu.user-account.become-consumer 	= Become a consumer
-master.menu.user-account.employer 			= Employer data
-master.menu.user-account.become-employer 	= Become an employer
-master.menu.user-account.worker 			= Worker data
-master.menu.user-account.become-worker	 	= Become a worker
 master.menu.user-account.auditor 			= Auditor data
 master.menu.user-account.become-auditor 	= Become a auditor
 
@@ -95,24 +95,6 @@ master.menu.challenge 				= Challenges
 master.menu.challenge.list 			= Challenges list
 master.menu.challenge.list-active 	= Active challenges
 master.menu.challenge.create 		= New challenge
-
-# master.menu.job #############################################################
-
-master.menu.job						= Jobs
-master.menu.job.list-active			= Active jobs
-master.menu.employer.job.list-mine 	= My jobs
-master.menu.employer.job.create		= Create a job
-master.menu.auditor.job.list-mine = Trabajos de mis registros de auditoría
-master.menu.auditor.job.list-notmine = Trabajos de registros de auditoría ajenos
-
-# master.menu.application #####################################################
-
-master.menu.application				= Applications
-master.menu.application.list-mine	= My applications
-master.menu.application.list-by-reference = My applications grouped by reference
-master.menu.application.list-by-moment = My applications grouped by moment
-master.menu.application.list-by-status = My applications grouped by status
-
 
 # master.footer ###############################################################
 
@@ -166,6 +148,10 @@ master.menu.commercial-banner.list 			= All commercial banners
 master.menu.non-commercial-banner.list 		= All non commercial banners
 master.menu.commercial-banner.create 		= Create a commercial banner
 master.menu.non-commercial-banner.create 	= Create a non commercial banner
+
+# master.menu.thread ####################################################
+master.menu.thread = Threads
+master.menu.thread.threads = My Threads
 
 # master.license ##############################################################
 
