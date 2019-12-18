@@ -5,7 +5,9 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Index;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -24,6 +26,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "referenceNumber asc"), @Index(columnList = "moment asc"), @Index(columnList = "status desc")
+})
 public class Application extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
@@ -50,6 +55,8 @@ public class Application extends DomainEntity {
 
 	@NotBlank
 	private String				qualifications;
+
+	private String				justification;
 
 	//Relaciones
 
