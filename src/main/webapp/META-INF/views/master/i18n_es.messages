@@ -103,11 +103,12 @@ master.menu.employer.job.create		= Crear un trabajo
 
 # master.menu.application #####################################################
 
-master.menu.application				= Solicitudes
-master.menu.application.list-mine	= Mis solicitudes
-master.menu.application.list-by-reference = Mis solicitudes agrupadas por referencia
-master.menu.application.list-by-moment = Mis solicitudes agrupadas por momento
-master.menu.application.list-by-status = Mis solicitudes agrupadas por estado
+master.menu.application								= Solicitudes
+master.menu.application.worker.list-mine			= Mis solicitudes
+master.menu.application.employer.list-mine			= Solicitudes para mis trabajos
+master.menu.application.employer.list-by-reference 	= Mis solicitudes agrupadas por referencia
+master.menu.application.employer.list-by-moment 	= Mis solicitudes agrupadas por momento
+master.menu.application.employer.list-by-status 	= Mis solicitudes agrupadas por estado
 
 ﻿# master.footer ###############################################################
 

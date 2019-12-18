@@ -103,11 +103,12 @@ master.menu.employer.job.create		= Create a job
 
 # master.menu.application #####################################################
 
-master.menu.application				= Applications
-master.menu.application.list-mine	= My applications
-master.menu.application.list-by-reference = My applications grouped by reference
-master.menu.application.list-by-moment = My applications grouped by moment
-master.menu.application.list-by-status = My applications grouped by status
+master.menu.application								= Applications
+master.menu.application.worker.list-mine			= My applications
+master.menu.application.employer.list-mine			= Applications to my jobs
+master.menu.application.employer.list-by-reference 	= My applications grouped by reference
+master.menu.application.employer.list-by-moment 	= My applications grouped by moment
+master.menu.application.employer.list-by-status 	= My applications grouped by status
 
 
 # master.footer ###############################################################

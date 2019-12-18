@@ -1109,7 +1109,7 @@
 		<property name="statement" value="Necesito el dinero" />
 		<property name="skills" value="Sé manejarme con mi espada de madera" />
 		<property name="qualifications" value="ESO" />
-		<property name="justification" value="Necesitamos alguien que sepa usar magia" />
+		<property name="justification" value="Necesitamos a alguien que sepa usar magia" />
 		<property name="worker" ref="workerWorker" />
 		<property name="job" ref="Job12" />
 	</bean>
@@ -1118,10 +1118,10 @@
 		<property name="referenceNumber" value="ref-app10" />
 		<property name="moment" value="2019/11/28 20:11" />
 		<property name="status" value="rejected" />
-		<property name="statement" value="Creo que soy quien necesitáis" />
-		<property name="skills" value="Demasiadas como para listarlas" />
+		<property name="statement" value="Sé que soy quien necesitáis" />
+		<property name="skills" value="Demasiadas y demasiado oscuras como para listarlas" />
 		<property name="qualifications" value="Rank 1 en FFXIV" />
-		<property name="justification" value="Sólo queremos gente que juege al WOW" />
+		<property name="justification" value="Sólo queremos gente que juege a WoW" />
 		<property name="worker" ref="workerWorker2" />
 		<property name="job" ref="Job12" />
 	</bean>
@@ -1141,7 +1141,7 @@
 		<property name="referenceNumber" value="ref-app12" />
 		<property name="moment" value="2019/10/31 23:59" />
 		<property name="status" value="accepted" />
-		<property name="statement" value="Para salvar a la Humanidad, toda fuerza es necesaria. Ofrezco mi vida para esta causa." />
+		<property name="statement" value="Para salvar a la Humanidad, toda ayuda es necesaria. Ofrezco mi vida por esta causa." />
 		<property name="skills" value="Espadas: SSS, Arco: S+, Bastón: SS" />
 		<property name="qualifications" value="Héroe" />
 		<property name="worker" ref="workerWorker4" />
