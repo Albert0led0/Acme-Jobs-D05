@@ -1,0 +1,15 @@
+# i18n_en.messages
+
+auditor.job.form.label.referenceNumber = Reference Number:
+auditor.job.form.label.title = Title:
+auditor.job.form.label.deadline = Deadline:
+auditor.job.form.label.salary = Salary:
+auditor.job.form.label.link = Link:
+auditor.job.form.label.description = Description:
+
+auditor.job.form.button.return = Return
+auditor.job.form.button.audit-record = Audit record's  list of this job
+
+auditor.job.list.referenceNumber = Reference Number
+auditor.job.list.title = Title
+auditor.job.list.deadline = Deadline

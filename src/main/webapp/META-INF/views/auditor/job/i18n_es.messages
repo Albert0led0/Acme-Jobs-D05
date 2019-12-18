@@ -1,0 +1,15 @@
+# i18n_es.messages
+
+auditor.job.form.label.referenceNumber = Número de referencia:
+auditor.job.form.label.title = Título:
+auditor.job.form.label.deadline = Fecha límite:
+auditor.job.form.label.salary = Salario:
+auditor.job.form.label.link = Enlace:
+auditor.job.form.label.description = Descripción:
+
+auditor.job.form.button.return = Volver
+auditor.job.form.button.audit-record = Lista del registro de auditoría de este trabajo
+
+auditor.job.list.referenceNumber = Número de referencia
+auditor.job.list.title = Título
+auditor.job.list.deadline = Fecha límite

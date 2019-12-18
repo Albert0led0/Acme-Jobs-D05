@@ -72,6 +72,8 @@ master.menu.user-account.employer 			= Datos de empleador
 master.menu.user-account.become-employer 	= Hazte empleador
 master.menu.user-account.worker 			= Datos del trabajador
 master.menu.user-account.become-worker	 	= Hazte trabajador
+master.menu.user-account.auditor 			= Datos del oyente
+master.menu.user-account.become-auditor 	= Hazte oyente
 
 # master.menu.company-record ##################################################
 
@@ -100,6 +102,8 @@ master.menu.job						= Trabajos
 master.menu.job.list-active			= Trabajos activos
 master.menu.employer.job.list-mine 	= Mis trabajos
 master.menu.employer.job.create		= Crear un trabajo
+master.menu.job-mine = Trabajos de mis registros de auditoría
+master.menu.job-not-mine = Trabajos de los registros de auditoría de otros
 
 # master.menu.application #####################################################
 
