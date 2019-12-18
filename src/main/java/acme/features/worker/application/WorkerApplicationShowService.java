@@ -44,6 +44,7 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		assert model != null;
 
 		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications");
+		model.setAttribute("jobRef", entity.getJob().getReferenceNumber());
 
 	}
 

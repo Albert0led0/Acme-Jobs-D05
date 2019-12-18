@@ -34,7 +34,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment");
+		request.bind(entity, errors, "moment", "status");
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications");
+		request.unbind(entity, model, "referenceNumber", "statement", "skills", "qualifications");
 		model.setAttribute("id", entity.getJob().getId());
 	}
 
@@ -67,6 +67,9 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		result.setWorker(worker);
 		result.setJob(job);
 
+		String status = "pending";
+		result.setStatus(status);
+
 		return result;
 	}
 
@@ -75,6 +78,8 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		errors.state(request, !this.repository.checkUniqueReference(entity.getReferenceNumber()), "referenceNumber", "worker.application.error.unique-reference");
 
 	}
 
