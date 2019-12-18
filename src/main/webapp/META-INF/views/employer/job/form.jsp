@@ -27,7 +27,7 @@
 		<acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status" />
 		<acme:form-checkbox code="employer.job.form.label.draft" path="draft"/>
 	</jstl:if>
-	<acme:form-textbox code="employer.job.form.label.description" path="description"/>
+	<acme:form-textarea code="employer.job.form.label.description" path="description"/>
 
 	<acme:form-submit test="${command == 'show'}"
 		code="employer.job.form.button.update" action="update"/>

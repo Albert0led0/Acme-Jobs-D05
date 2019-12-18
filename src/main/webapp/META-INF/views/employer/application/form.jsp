@@ -19,7 +19,7 @@
 	<acme:form-textbox code="employer.application.form.label.reference" path="referenceNumber"/>
 	<acme:form-textbox code="employer.application.form.label.moment" path="moment"/>
 	<acme:form-moment code="employer.application.form.label.status" path="status"/>
-	<acme:form-money code="employer.application.form.label.statement" path="statement"/>
+	<acme:form-textbox code="employer.application.form.label.statement" path="statement"/>
 	<acme:form-url code="employer.application.form.label.skills" path="skills"/> 
 	<acme:form-textbox code="employer.application.form.label.qualifications" path="qualifications"/>
 		
