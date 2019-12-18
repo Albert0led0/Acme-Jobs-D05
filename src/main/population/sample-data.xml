@@ -661,7 +661,7 @@
 		<property name="title" value="Audit Record Example 01" />
 		<property name="moment" value="2019/11/28 19:15" />
 		<property name="body" value="This is an example for Desing and Testing subject" />
-		<property name="status" value="draft" />
+		<property name="draft" value="true" />
 		<property name="auditor" ref="auditorAuditor" />
 		<property name="job" ref="Job01" />
 	</bean>
@@ -670,7 +670,7 @@
 		<property name="title" value="Audit Record Example 02" />
 		<property name="moment" value="2019/11/29 19:15" />
 		<property name="body" value="This is a second example for Desing and Testing subject" />
-		<property name="status" value="published" />
+		<property name="draft" value="false" />
 		<property name="auditor" ref="auditorAuditor" />
 		<property name="job" ref="Job02" />
 	</bean>
@@ -679,7 +679,7 @@
 		<property name="title" value="Audit Record Example 03" />
 		<property name="moment" value="2019/11/30 19:15" />
 		<property name="body" value="This is the third example for Desing and Testing subject" />
-		<property name="status" value="published" />
+		<property name="draft" value="false" />
 		<property name="auditor" ref="auditorAuditor01" />
 		<property name="job" ref="Job03" />
 	</bean>
@@ -688,7 +688,7 @@
 		<property name="title" value="Audit Record Example 04" />
 		<property name="moment" value="2019/12/30 17:15" />
 		<property name="body" value="This is the fourth example for Desing and Testing subject" />
-		<property name="status" value="published" />
+		<property name="draft" value="false" />
 		<property name="auditor" ref="auditorAuditor01" />
 		<property name="job" ref="Job03" />
 	</bean>
@@ -697,7 +697,7 @@
 		<property name="title" value="Audit Record Example 05" />
 		<property name="moment" value="2019/12/30 12:52" />
 		<property name="body" value="This is the fifth example for Desing and Testing subject" />
-		<property name="status" value="published" />
+		<property name="draft" value="false" />
 		<property name="auditor" ref="auditorAuditor01" />
 		<property name="job" ref="Job04" />
 	</bean>

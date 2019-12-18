@@ -32,7 +32,7 @@ public interface AuditorJobRepository extends AbstractRepository {
 	@Query("select  j from Job j where exists(select ar from AuditRecord ar where ar.job.id = j.id and ar.auditor.id = ?1)")
 	Collection<Job> findJobsByAuditMine(int auditorId);
 
-	@Query("select  j from Job j where exists(select distinct ar from AuditRecord ar where ar.job.id = j.id and ar.auditor.id = ?1)")
+	@Query("select  j from Job j where exists(select ar from AuditRecord ar where ar.job.id = j.id and ar.auditor.id <> ?1)")
 	Collection<Job> findJobsByAuditNotMine(int auditorId);
 
 	//	@Query("select distinct ar.job from AuditRecord ar where ar.auditor.id=?1")

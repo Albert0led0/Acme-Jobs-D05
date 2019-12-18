@@ -11,7 +11,6 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import acme.entities.jobs.Job;
 import acme.entities.roles.Auditor;
@@ -35,14 +34,16 @@ public class AuditRecord extends DomainEntity {
 	@NotBlank
 	private String				body;
 
-	@NotBlank
-	@Pattern(regexp = "^(draft|published)$")
-	private String				status;
+	private boolean				draft;
 
 
 	@Transient
-	public boolean isPublic() {
-		return this.status.equals("published");
+	public String getStatus() {
+		String res = "draft";
+		if (!this.isDraft()) {
+			res = "published";
+		}
+		return res;
 	}
 
 

@@ -32,7 +32,8 @@ public class AuditorAuditRecordShowService implements AbstractShowService<Audito
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "body", "status");
+		request.unbind(entity, model, "title", "moment", "body");
+		model.setAttribute("status", entity.getStatus());
 
 	}
 

@@ -2,6 +2,7 @@
 package acme.features.auditor.auditRecord;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,8 @@ public class AuditorAuditRecordListService implements AbstractListService<Audito
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "body", "status");
+		request.unbind(entity, model, "title", "moment");
+		model.setAttribute("status", entity.getStatus());
 
 	}
 
@@ -45,8 +47,8 @@ public class AuditorAuditRecordListService implements AbstractListService<Audito
 		Collection<AuditRecord> res;
 
 		String jobId = request.getModel().getAttribute("id").toString();
-		res = this.repository.findPublishedByJobId(Integer.parseInt(jobId));
+		res = this.repository.findAuditByJobId(Integer.parseInt(jobId));
 
-		return res;
+		return res.stream().filter(ar -> ar.getStatus().equals("published")).collect(Collectors.toList());
 	}
 }
