@@ -22,9 +22,9 @@
 	<acme:form-textbox code="employer.application.form.label.status.current" path="currentStatus" readonly="true"/>
 	
 	<acme:form-select code="employer.application.form.label.status" path="status">
-	<acme:form-option code="employer.application.form.label.pending" value="pending"/>
-	<acme:form-option code="employer.application.form.label.accepted" value="accepted"/>
-	<acme:form-option code="employer.application.form.label.rejected" value="rejected"/>
+  	<acme:form-option code="employer.application.form.label.pending" value="pending"/>
+	  <acme:form-option code="employer.application.form.label.accepted" value="accepted"/>
+	  <acme:form-option code="employer.application.form.label.rejected" value="rejected"/>
 	</acme:form-select>
 	
 	<acme:form-textbox code="employer.application.form.label.statement" path="statement" readonly="true"/>
