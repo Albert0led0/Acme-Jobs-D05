@@ -72,6 +72,10 @@ master.menu.user-account.provider 			= Datos de proveedor
 master.menu.user-account.become-provider 	= Hazte proveedor
 master.menu.user-account.consumer 			= Datos de consumidor
 master.menu.user-account.become-consumer 	= Hazte consumidor
+master.menu.user-account.employer 			= Datos de empleador
+master.menu.user-account.become-employer 	= Hazte empleador
+master.menu.user-account.worker 			= Datos del trabajador
+master.menu.user-account.become-worker	 	= Hazte trabajador
 master.menu.user-account.auditor 			= Datos del oyente
 master.menu.user-account.become-auditor 	= Hazte oyente
 
@@ -95,6 +99,23 @@ master.menu.challenge 				= Retos
 master.menu.challenge.list 			= Listado de retos
 master.menu.challenge.list-active 	= Retos activos
 master.menu.challenge.create 		= Nuevo reto
+
+# master.menu.job #############################################################
+
+master.menu.job						= Trabajos
+master.menu.job.list-active			= Trabajos activos
+master.menu.employer.job.list-mine 	= Mis trabajos
+master.menu.employer.job.create		= Crear un trabajo
+master.menu.job-mine = Trabajos de mis registros de auditoría
+master.menu.job-not-mine = Trabajos de los registros de auditoría de otros
+
+# master.menu.application #####################################################
+
+master.menu.application				= Solicitudes
+master.menu.application.list-mine	= Mis solicitudes
+master.menu.application.list-by-reference = Mis solicitudes agrupadas por referencia
+master.menu.application.list-by-moment = Mis solicitudes agrupadas por momento
+master.menu.application.list-by-status = Mis solicitudes agrupadas por estado
 
 ﻿# master.footer ###############################################################
 
