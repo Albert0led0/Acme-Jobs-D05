@@ -85,7 +85,8 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.job" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.job.list-active" action="/authenticated/job/list-active"/>
+			<acme:menu-suboption code="master.menu.job.list-active" action="/authenticated/job/list-active" access="!hasRole('Worker')"/>
+			<acme:menu-suboption code="master.menu.job.list-active" action="/worker/job/list-active" access="hasRole('Worker')"/>
 			<acme:menu-suboption code="master.menu.employer.job.list-mine" action="/employer/job/list-mine" access="hasRole('Employer')"/>
 			<acme:menu-suboption code="master.menu.employer.job.create" action="/employer/job/create" access="hasRole('Employer')" />
 		</acme:menu-option>
