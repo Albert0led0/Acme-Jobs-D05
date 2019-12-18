@@ -106,6 +106,7 @@ DROP TABLE IF EXISTS `application`;
 CREATE TABLE `application` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
+  `justification` varchar(255) DEFAULT NULL,
   `moment` datetime(6) DEFAULT NULL,
   `qualifications` varchar(255) DEFAULT NULL,
   `reference_number` varchar(255) DEFAULT NULL,
@@ -116,6 +117,9 @@ CREATE TABLE `application` (
   `worker_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_rf84q38qr35ymh5nn0dcxfdue` (`reference_number`),
+  KEY `IDXnlv6ege1ixororpblu3lctiev` (`reference_number`),
+  KEY `IDXg54pxa1gngqheaipukeg8jypk` (`moment`),
+  KEY `IDX2q2747fhp099wkn3j2yt05fhs` (`status` DESC),
   KEY `FKoa6p4s2oyy7tf80xwc4r04vh6` (`job_id`),
   KEY `FKmbjdoxi3o93agxosoate4sxbt` (`worker_id`),
   CONSTRAINT `FKmbjdoxi3o93agxosoate4sxbt` FOREIGN KEY (`worker_id`) REFERENCES `worker` (`id`),
@@ -701,7 +705,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$jbjeU4xdpiBblrFrtc7WcOKcLitSfCmsf0qiaV8QBE8HlH7MQVLa6','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$SRy8xH8qX48hdFiY2uVgU.NV0hh.SQGoU9cZycpBMxXjvTusqEQO6','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$VgBpxlgX56TZ3FRbrWdi1.C3ORbYx3DbKpLrDBeZaWhkk5en2vg5m','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$k670UCBpgZph4OYY0J2FfeKeP9GMJUyG4rWRUVT1ITuCiGPqq.862','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -742,4 +746,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-04 16:18:48
+-- Dump completed on 2019-12-18 14:52:10
